@@ -18,7 +18,7 @@ main .whole{
     margin-top: 18vh;
 }
 main .card{
-    background-image: url("/images/image-product-desktop.jpg");
+    background-image: url("images/image-product-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 21vw;
@@ -101,7 +101,7 @@ button:hover {
         margin-top: 1em;
     }
     main .card{
-        background-image: url("/images/image-product-mobile.jpg");
+        background-image: url("images/image-product-mobile.jpg");
         min-width: 92vw;
         min-height: 48vh;
         border-radius: 1em 1em 0 0;
