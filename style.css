@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+main .whole{
+    display: flex;
+    margin-top: 18vh;
+}
+main .card{
+    background-image: url("/images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 21vw;
+    min-height: 460px;
+    padding: 1.8em;
+    border-radius: 1em 0 0 1em;
+    box-sizing: border-box;
+}
+main .card2{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    width: 21vw;
+    /*min-height: 460px;*/
+    padding: 2.1em;
+    border-radius: 0 1em 1em 0;
+    box-sizing: border-box;
+}
+main .card2 .cat{
+    color: hsl(228, 12%, 48%);
+    line-height: 3.5;
+    display: inline-block;
+}
+main .card2 .title{
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 0.7em;
+}
+main .card2 .decs{
+    color: hsl(228, 12%, 48%);
+    display: inline-block;
+    line-height: 2;
+    margin-bottom: 1em;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2em;
+}
+main .card2 .discount{
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    color: hsl(158, 36%, 37%);
+}
+main .card2 .oldp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 18px;
+    text-decoration: line-through;
+}
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 0.9em;
+    width: calc(100% - 1px);
+}
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 376px) {
+    main {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    main .whole{
+        flex-wrap: wrap;
+        margin-top: 1em;
+    }
+    main .card{
+        background-image: url("/images/image-product-mobile.jpg");
+        min-width: 92vw;
+        min-height: 48vh;
+        border-radius: 1em 1em 0 0;
+    }
+    main .card2{
+        min-width: 92vw;
+        border-radius: 0 0 1em 1em;
+        box-sizing: border-box;
+    }
+    main .card2 .title {
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+    main .card2 .cat{
+        line-height: 1.5;
+        margin: 0 0 1em 0;
+    }
+    main .card2 .decs{
+        color: hsl(228, 12%, 48%);
+        display: inline-block;
+        line-height: 2;
+        margin-bottom: 1em;
+    }
+}
